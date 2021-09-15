@@ -22,7 +22,7 @@ The browser build supports both sync (v4 or v5 syncWebAssembly mode) and async (
 
 In both builds, the module exposes two methods:
 
-* `compress(Buffer, [options])` - compresses a buffer using Brotli, returning the compressed buffer. An optional options object can be provided. The only currently supported option is `quality`: a number between 1 and 11.
+* `compress(Buffer, {options})` - compresses a buffer using Brotli, returning the compressed buffer. An optional options object can be provided. The only currently supported option is `quality`: a number between 1 and 11.
 * `decompress(Buffer)` - decompresses a buffer using Brotli, returning the original raw data.
 
 In node.js:
